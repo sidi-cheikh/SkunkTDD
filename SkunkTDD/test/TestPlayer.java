@@ -17,5 +17,10 @@ public class TestPlayer {
 	public void canGetThePlayerName(){
 		testPlayer.getName();
 	}
+	
+	@Test
+	public void playerNameIsSetCorrectly(){
+		assertEquals(testPlayerName, testPlayer.getName());
+	}
 
 }
