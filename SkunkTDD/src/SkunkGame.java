@@ -1,7 +1,7 @@
 
 public class SkunkGame {
 
-	public SkunkGame(String[] pnames){
+	public SkunkGame(String[] playerNames){
 		
 	}
 }
