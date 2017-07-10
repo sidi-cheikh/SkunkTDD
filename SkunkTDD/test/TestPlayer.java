@@ -8,5 +8,11 @@ public class TestPlayer {
 	public void canCreateAPlayer() {
 		new Player("Player1");
 	}
+	
+	@Test
+	public void canGetThePlayerName(){
+		Player p = new Player("Player1");
+		p.getName();
+	}
 
 }
