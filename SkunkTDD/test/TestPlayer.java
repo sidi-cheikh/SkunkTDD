@@ -1,18 +1,21 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TestPlayer {
 
-	@Test
-	public void canCreateAPlayer() {
-		new Player("Player1");
+	Player testPlayer;
+	String testPlayerName = "Player1";
+	
+	@Before
+	public void setUp(){
+		testPlayer = new Player(testPlayerName);
 	}
 	
 	@Test
 	public void canGetThePlayerName(){
-		Player p = new Player("Player1");
-		p.getName();
+		testPlayer.getName();
 	}
 
 }
